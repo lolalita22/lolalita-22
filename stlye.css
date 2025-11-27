@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffebf4;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    max-width: 500px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e91e63;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #d81b60;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffebf4;
+    margin-top: 40px;
+}
